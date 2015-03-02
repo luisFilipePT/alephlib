@@ -9,7 +9,8 @@
                 <div class="content">
                     <div class="title">Laravel 5</div>
                     <div class="searchform">
-                        <form method="POST" action="/result">
+                        <form method="POST" action="/result" id="teste">
+                            <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                             <input name="search" placeholder="Title, author, ISBN">
                             <input type="submit" value="Search">
                         </form>

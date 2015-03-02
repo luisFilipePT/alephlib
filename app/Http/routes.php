@@ -15,12 +15,13 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-// route to process the ducks form
-Route::post('result', function()
-{
+Route::post('result', 'ApiController@index');
 
-	return view('welcome');
-});
+// route to process the result form
+// Route::post('result', function()
+// {
+// 	return view('results');
+// });
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
